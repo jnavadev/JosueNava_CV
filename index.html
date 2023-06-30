@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV Josue Nava</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet"/>
+    <link 
+     rel="stylesheet"
+     href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"
+     />
+    <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="css/navbar.css"/>
+    <link rel="stylesheet" href="css/profile.css"/>
+    <link rel="stylesheet" href="css/skills.css"/>
+    <link rel="stylesheet" href="css/experiences.css"/>
+    <link rel="stylesheet" href="css/contact.css">
+    <script defer src="js/app.js"></script>
+</head>
+  <body>
+    <header class="topheader">
+      <nav class="topnav">
+        <a href="#" class="logo">
+          <img
+            height="50"
+            width="50"
+            src="img/java-logo.jpg"
+            alt="Java Backend Developer"
+          />
+          <div>
+            Josue Nava<br/>
+            { < DEV /> }
+          </div>
+        </a>
+        <button class="open-menu" aria-label="Abrir menú">
+            <img src="img/hamburger-icon.svg" alt="abrir menú">
+        </button>
+        <ul class="menu">
+            <button class="close-menu" aria-label="Cerrar menú">
+                <img src="img/close-icon.svg" alt="cerrar menú">
+            </button>
+            <li><a href="#profile" class="selected">Perfil</a></li>
+            <li><a href="#experience">Experiencia</a></li>
+            <li><a href="#skills">Habilidades</a></li>
+            <li><a href="#contact">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="horizontal-padding vertical-padding">
+      <section class="profile" id="profile">
+        <div class="profile-info">
+          <h1 class="profile-title">Hola, soy <br />Josue Habacuc Nava Perez</h1>
+          <p class="profile-details">
+            Soy desarrollador de aplicaciones web especializado 
+            en el BackEnd con el lenguaje Java 8, cuento con 3 años de experiencia comprobable, actualmente 
+            soy pasante de la carrera de Ingeniería en Sistemas Computacionales
+            en la Universidad Virtual del Estado de Guanajuato.
+          </p>
+          <button class="profile-btn">
+            Descargar CV
+          </button>
+        </div>
+        <span class="profile-img-section">
+          <img class="profile-img" src="img/JosueNava.png" alt="programador">
+          <div class="profile-img-line"></div>
+        </span>
+      </section>
+    </div>
+
+    <section class="experiences" id="experience">
+      <img src="img/wave.svg" alt="división" class="wave">
+      <div class="experiences-body">
+        <h2 class="experiences-title">Experiencia</h2>
+        <div class="experiences-grid">
+          <div class="empty"></div>
+          <div class="line"></div>
+          <div class="experience">
+            <div class="experience-date">Enero 2023-Junio 2023</div>
+            <div class="experience-company">Punto Casa de Bolsa (Grupo Salinas)</div>
+            <div class="experience-position">Consultor Senior</div>
+            <div class="experience-description">Apoye con el migrado de FrontEnd utilizando la librería de ReactJS, Colabore como
+              administrador DBA SQL Server 2012, apoye en el análisis y la corrección de errores en el BackEnd Java.
+            </div>
+          </div>
+          <div class="experience experience_right">
+            <div class="experience-date">Octubre 2022-Diciembre 2022</div>
+            <div class="experience-company">DaCodes</div>
+            <div class="experience-position">Software Developer Engineer</div>
+            <div class="experience-description">Lorem ipsum dolor sit.</div>
+          </div>
+          <div class="line"></div>
+          <div class="empty"></div>
+          <div class="empty"></div>
+          <div class="line"></div>
+          <div class="experience">
+            <div class="experience-date">Enero 2023-Junio 2023</div>
+            <div class="experience-company">Visit-Code</div>
+            <div class="experience-position">Consultor Senior</div>
+            <div class="experience-description">Lorem ipsum dolor sit.</div>
+          </div>
+        </div>
+      </div>
+      <img src="img/wave.svg" alt="división" class="wave wave_bottom">
+    </section>
+
+    <div class="horizontal-padding vertical-padding">
+      <section class="skills" id="skills">
+        <h2 class="skills-title">Habilidades</h2>
+        <ul class="skills-list">
+          <li class="skills-skill">JAVA 8</li>
+          <li class="skills-skill">Spring Framework</li>
+          <li class="skills-skill">Spring Boot</li>
+          <li class="skills-skill">Spring Cloud</li>
+          <li class="skills-skill">MySQL</li>
+          <li class="skills-skill">POSTGRESQL</li>
+          <li class="skills-skill">SQL Server</li>
+          <li class="skills-skill">GIT</li>
+          <li class="skills-skill">GitHub</li>
+          <li class="skills-skill">Maven</li>
+          <li class="skills-skill">Tomcat</li>
+        </ul>
+      </section>
+    </div>
+    <div class="horizontal-padding vertical-padding">
+      <section class="contact" id="contact">
+        <h2 class="contact-title">Contacto</h2>
+        <div class="contact-details">
+          <div class="contact-details-group">
+            <p class="contact-label">Dirección:</p>
+            <p class="contact-text">Cuernavaca, Morelos</p>
+          </div>
+          <div class="contact-details-group">
+            <p class="contact-label">Email:</p>
+            <p class="contact-text">jnavah3@gmail.com</p>
+          </div>
+          <div class="contact-details-group">
+            <p class="contact-text">Deje su mensaje y con gusto le responderé</p>
+          </div>
+        </div>
+        <form class="contact-form">
+          <div class="contact-form-group">
+            <label for="name">Nombre</label>
+            <input required type="text" name="name" id="name">
+          </div>
+          <div class="contact-form-group">
+            <label for="email">Email</label>
+            <input required type="email" name="email" id="email">
+          </div>
+          <div class="contact-form-group">
+            <label for="message">Mensaje</label>
+            <textarea required name="message" id="message" rows="6"></textarea>
+          </div>
+          <button type="submit" class="contact-form-submit">Enviar</button>
+        </form>
+        <nav class="social">
+          <ul class="social-list">
+            <li>
+              <a href="https://www.youtube.com/c/ElMundodelEstudiante-Cursos">
+                <img src="img/social/youtube.png" alt="youtube channel">
+              </a>
+            </li>
+            <li class="social-item">
+              <a href="www.linkedin.com/in/josue-nava-b3b3191aa">
+                <img src="img/social/linkedin.png" alt="youtube channel">
+              </a>
+            </li>
+            <li class="social-item">
+              <a href="https://github.com/jnavadev">
+                <img src="img/social/code.png" alt="youtube channel">
+              </a>
+            </li>
+          </ul>
+        </nav>
+    </section>
+    </div>
+  </body>
+</html>
